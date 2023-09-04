@@ -1,0 +1,179 @@
+/* General */
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+ /* 0 Parte - Cabecera  */
+
+ header {
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+    cursor: pointer;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+}
+
+header a:hover{
+    color: blueviolet;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+ /* Division  */
+
+
+.contenedor{
+    width: 100%;
+    padding: 15px;
+}
+.formulario{
+    
+    background: #fff;
+    margin-top: 150px;
+    padding: 3px;
+}
+
+input[type="text"],s
+input[type="password"]{
+    font-size: 20px;
+    width: 88%;
+    padding: 10px;
+    border: none;   
+    position: relative;
+    margin-left: 0;
+}
+
+.disabled-field {
+    color: red;
+}
+
+select {
+    font-size: 20px;
+    width: 88%;
+    padding: 10px;
+    border: none;
+}
+
+select option[value="Administrador"],
+select option[value="Estudiante"] {
+    color: black;
+}
+
+select option[id="a"] {
+    color: #757575;
+}
+
+.input-contenedor{
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+.icon{
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+.button{
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background:  rgb(166, 98, 230);
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover{
+    background: blueviolet;
+}
+
+@media(min-width:768px)
+{
+    .formulario{
+        margin: auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius: 2%;
+    }
+}
+
+  /* Footer - Informacion de Contacto */
+
+footer{
+    align-items: center;
+    background-color: rgb(30,30,30);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(148, 148, 148);
+    background-color: rgb(30,30,30);
+}
+
+footer .container{
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(30,30,30);
+}
+
+@media (min-width: 850px){
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+}
+

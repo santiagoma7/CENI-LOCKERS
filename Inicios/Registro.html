@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title></title> 
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+	<link rel="stylesheet" href="CSS/estilos.css">
+</head>  
+<body>
+ <form class="formulario" action="../PHP/Registrar.php" method="post">
+    
+    <h1>Registrarse</h1>
+     <div class="contenedor">
+     
+        <div class="input-contenedor">
+            <i class="fas fa-user icon"></i>
+            <input type="text" name="nombre" placeholder="Nombre Completo" required>
+        </div>
+         
+
+        <div class="input-contenedor">
+            <i class="fas fa-id-card icon"></i>
+            <input type="text" name="id_registro" placeholder="Numero de Identificación" required>
+        </div>
+         
+        <div class="input-contenedor">
+            <i class="fas fa-graduation-cap icon"></i>  
+            <input type="text" name="ficha" placeholder="Ficha" required>
+        </div>
+
+        <div class="input-contenedor">
+            <i class="fas fa-user-secret icon"></i>
+            <input type="password" name="contrasena" placeholder="Contraseña" required>
+        </div>
+
+        <div class="input-contenedor">
+            <i class="fas fa-envelope icon"></i>
+            <input type="text" id="email" name="email" placeholder="Correo Electronico" required>   
+        </div>
+
+        <div class="input-contenedor">
+            <i class="fas fa-phone icon"></i>
+            <input type="text" name="celular" placeholder="Teléfono o Celular" required>   
+        </div>
+
+        <div class="input-contenedor">
+            <i class="fas fa-user-cog icon"></i>
+            <select type="text" id="rol" name="rol" required >
+                <option id="a" value="" >Seleccionar</option>
+                <option value="Estudiante" >Estudiante</option>
+                <option value="Administrador" disabled>Administrador</option>
+            </select>
+        </div>
+
+
+         <input type="submit" value="Registrarse" class="button">
+         <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+         <p>¿Ya tienes una cuenta?<a class="link" href="InicioSesion.html">Iniciar Sesion</a></p>
+     </div>
+    </form>
+</body>
+</html>

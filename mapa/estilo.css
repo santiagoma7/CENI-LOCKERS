@@ -1,0 +1,17 @@
+/* Add this CSS to your estilo.css or within a <style> tag in the <head> section */
+.my-custom-btn {
+  background-color: #FF9900; /* Customize the background color */
+  color: #fff; /* Customize the text color */
+  border: none; /* Remove the default button border */
+  border-radius: 8px; /* Add border radius */
+  padding: 10px 20px; /* Add padding */
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.my-custom-btn:hover {
+  background-color: #FFCC00; /* Customize the background color on hover */
+  color: #fff; /* Keep the text color on hover */
+  transition: background-color 0.3s ease;
+}
